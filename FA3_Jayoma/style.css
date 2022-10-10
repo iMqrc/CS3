@@ -3,9 +3,9 @@ html {
 }
 h1 {
     text-align: center;
-    background-color: #00ffff;
+    background-color: #4199f1;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 2px dotted blue;
+    border: 2px dotted rgba(49, 105, 225, 0.635);
     padding: 10px, 15px, 10px, 15px;
     width: 250px;
     margin-bottom: 20px;   
