@@ -1,0 +1,32 @@
+html {
+    background-image: url("images/background.png");
+}
+h1 {
+    text-align: center;
+    background-color: #00ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px dotted blue;
+    padding: 10px, 15px, 10px, 15px;
+    width: 250px;
+    margin-bottom: 20px;   
+}
+p {
+    background-color: hsl(199.2,77.4%,73.9%);
+    text-align: justify;
+    font-style: italic;
+    padding: 20px;
+    border: 3px black;
+    border-right-style: dotted;
+    border-top-style: dashed;
+    border-left-style: double;
+    border-right-style: solid;
+    border-bottom-style: hidden;
+    width: 500px;
+}
+span {
+    font-style: bold, italic;
+    color: rgb(207, 108, 108);
+    margin: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
