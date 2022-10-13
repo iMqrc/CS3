@@ -1,0 +1,37 @@
+.button {
+    border: 2px solid;
+    font-weight: bold;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: left;
+    border-radius: 15px;
+}
+.buttonbasic {
+    background-color: rgb(255, 35, 35);
+    color: white;
+}
+.buttonbasic:hover {
+    background-color: white;
+    color:rgb(255, 35, 35);
+}
+.buttonhtml {
+    background-color: rgb(255, 255, 60);
+    color: white;
+}
+.buttonhtml:hover {
+    background-color: white;
+    color: rgb(255, 255, 60);
+}
+.buttonBPWDL {
+    background-color: rgb(44, 44, 255);
+    color: white;
+}
+.buttonBPWDL:hover {
+    background-color: white;
+    color: rgb(44, 44, 255);
+}
