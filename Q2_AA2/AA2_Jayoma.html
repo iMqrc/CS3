@@ -36,34 +36,28 @@ color: blue;
 display:inline-block;
 padding:50px;
 }
-#red:hover {
-    color: white;
+#red:hover{
     background-color: red;
-    transform: scale(2)
-}
-#blue:hover {
     color: white;
+    padding: 100px;
+}
+#red:active{
+    color: rgba(0, 0, 0, 0);
+    background: url(images/tile007.png) center no-repeat red;
+}
+#blue:hover{
     background-color: blue;
-    transform: scale(2)
+    color: white;
+    padding: 100px;
 }
-#red:active {
-    font-size: 0px;
-    height: 100px;
-    width: 100px;
-    background: url('youtube-active.png') no-repeat center;
-    background-size: cover;
-}
-#blue:active {
-    font-size: 0px;
-    height: 100px;
-    width: 100px;
-    background: url('instagram-active.png')no-repeat center;
-    background-size: cover;
+#blue:active{
+    color: rgba(0, 0, 0, 0);
+    background: url(images/tile008.png) center no-repeat blue;
 }
 </style>
 </head>
 <body>
-<div id="red"><center><p> RED </p></center> </div>
-<div id="blue"><center><p> BLUE </p></center></div>
+<div id="red" > <p> RED </p> </div>
+<div id="blue" > <p> BLUE </p></div>
 </body>
 </html>
