@@ -233,3 +233,64 @@ section {
   text-align: center;
   padding: 20px;
 }
+.cntcs-footer {
+  position: sticky;
+  display: inline-block;
+}
+.fb-sprite {
+	background: url('images/sprite.png') no-repeat 0 0;
+	width: 100px;
+	height: 100px;
+  transform: scale(50%);
+  border-radius: 50%;
+}
+.fb-sprite:hover {
+  background: url('images/sprite.png') no-repeat 0 -110px;
+	width: 100px;
+  padding-right: 50px;
+	height: 100px;
+  transform: scale(75%)
+}
+.twt-sprite {
+  background: url('images/sprite.png') no-repeat -105px 0;
+	width: 100px;
+	height: 100px;
+  transform: scale(50%);
+  border-radius: 50%;
+}
+.twt-sprite:hover {
+  background: url('images/sprite.png') no-repeat -105px -110px;
+	width: 100px;
+	height: 100px;
+  transform: scale(75%);
+}
+.yt-sprite {
+  background: url('images/sprite.png') no-repeat -210px 0;
+	width: 100px;
+	height: 100px;
+  transform: scale(50%);
+  border-radius: 50%;
+}
+.yt-sprite:hover {
+  background: url('images/sprite.png') no-repeat -210px -110px;
+	width: 100px;
+	height: 100px;
+  transform: scale(75%);
+}
+.insta-sprite {
+  background: url('images/sprite.png') no-repeat -315px 0;
+	width: 100px;
+	height: 100px;
+  transform: scale(50%);
+  border-radius: 50%;
+}
+.insta-sprite:hover {
+  background: url('images/sprite.png') no-repeat -315px -110px;
+	width: 100px;
+	height: 100px;
+  transform: scale(75%);
+}
+.float-child {
+  margin-left: -10px;
+  float: left;
+}  
