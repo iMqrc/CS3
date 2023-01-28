@@ -1,0 +1,158 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #2d3436;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  article {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  article h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  article p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #2d3436;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  footer nav a:hover {
+    color: #636e72;
+  }
+  /* Add this to your CSS stylesheet */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+/* Add this to your CSS stylesheet */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+/* Add styling to the active navigation link */
+a.active {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* Add some spacing and styling to the post list */
+#post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#post-list li {
+  margin: 20px 0;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+}
