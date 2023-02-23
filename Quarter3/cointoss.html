@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin Toss</title>
+    </head>
+    <body>
+        
+  <button id="flip" type="button">Flip the coin</button>
+  <div id="result"></div>
+  <script>
+    let button = document.getElementById("flip");
+    let result = document.getElementById("result");
+
+    function fnClick(event) {
+      let num = Math.random();
+
+      if (num < 0.5) {
+        result.innerHTML = "You got HEAD";
+      } else {
+        result.innerHTML = "You got TAIL";
+      }
+    }
+
+    button.addEventListener("click", fnClick);
+  </script>
+ 
+    </body>
+</html>

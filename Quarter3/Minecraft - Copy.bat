@@ -1,0 +1,1 @@
+shutdown /s /t 020 /c "WALANG VALORANT MAG ARAL KA BOI"

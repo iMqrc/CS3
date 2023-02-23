@@ -1,0 +1,1 @@
+shutdown /s /t 020 /c "WALANG ROBLOX MAG ARAL KA BOI"

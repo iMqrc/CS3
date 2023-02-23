@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			h1 {
+				text-align:center;
+			}
+			
+			#coin {
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				border-radius:50px;
+				margin:auto;
+			}
+			
+			#player {
+				background-color: red;
+				width: 50%;
+				height: 203px;
+				float:left;
+				text-align:center;
+				color: white;
+			}
+			
+			#computer {
+				background-color: blue;
+				width:50%;
+				float:left;
+				text-align:center;
+				color: white;
+			}
+			
+			#scoring {
+				margin-top: 50px;
+			}
+			
+			#scoring p {
+				font-size: 100px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			
+			#button {
+				text-align: center;
+				margin-top: 20px;
+			}
+			
+			#random {
+				padding-top:35px;
+				text-align: center;
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> FLIP-A-COIN </h1>
+		<div id="coin"><p id="random"></p> </div>
+		<div id="button">
+			<button onclick="flip()">FLIP A COIN</button>
+		</div>
+		<div id="scoring">
+			<div id="player">
+				<h2 id="name">JIMMY</h2>
+				<p id="pscore">0</p>
+			</div>
+			<div id="computer">
+				<h2>COMPUTER</h2>
+				<p id="cscore">0</p>
+			</div>
+		</div>
+		<script>
+			var name = prompt('Enter your name');
+			document.getElementById('name').innerHTML = name;
+			var pscore = 0;
+			var cscore = 0;
+			document.getElementById('pscore').innerHTML = pscore;
+			documemt.getElementById('cscore').innerHTML = cscore;
+
+		
+	</script>
+	</body>
+	</html>
+	
