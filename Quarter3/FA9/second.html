@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second Page</title>
+	<style>
+		#myImage {
+			width: 700px;
+			height: 700px;
+		}
+	</style>
+	<script>
+		function replaceImage() {
+			document.getElementById("myImage").src = "new_image.jpg";
+		}
+		function revertImage() {
+			document.getElementById("myImage").src = "original_image.jpg";
+		}
+	</script>
+</head>
+<body>
+	<img id="myImage" src="original_image.jpg">
+	<br>
+	<button onclick="replaceImage()">Replace Image</button>
+	<button onclick="revertImage()">Revert Image</button>
+</body>
+</html>
