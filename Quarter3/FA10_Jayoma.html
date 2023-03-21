@@ -22,8 +22,20 @@
       let tens = Math.floor((randomNumber % 100) / 10);
       let hundreds = Math.floor(randomNumber / 100);
 
+      if (hundreds === 0 ){
+        hundreds = hundreds;
+      } else {
+        hundreds = hundreds + "00";
+      }
+
+      if (tens === 0){
+        tens = tens;
+      } else {
+        tens = tens + "0";
+      }
+
       // Print the breakdown of the number
-      document.getElementById("numberBreakdown").textContent = `Breakdown: ${hundreds}00, ${tens}0, ${ones}`;
+      document.getElementById("numberBreakdown").textContent = `Breakdown: ${hundreds}, ${tens}, ${ones}`;
     }
   </script>
 </body>
