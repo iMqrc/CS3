@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Online Shop</title>
+    <!-- type in the necessary meta tags -->
+        <meta name="description" content="My Online Shop"/>
+		<meta name="subject" content="Computer Science">
+		<meta name="copyright"content="KMJayoma_Lithium">
+		<meta name="language" content="EN">
+        <meta name="author" content="Kerven Marc Jayoma, marc.jayoma@gmail.com">
+	<style>
+      span {color: blue; text-decoration:underline}
+      button {width: 100px; padding: 5px; background: pink;}
+	</style>
+
+	</head>
+<body>
+	<h1> Welcome to My Online Shop </h1>
+	<h2> Please select from the following items </h2>
+	<!--- provide your own 3 items and their prices in the list --->
+	<ol>
+		<li> Item#1 price: 100.00 </li>
+		<li> Item#2 price: 250.00 </li>
+		<li> Item#3 price: 300.00 </li>
+	</ol>
+	<!-- the following will be used to display purchase information -->
+    <p> Item selected : <span id="item"> </span> </p>
+	<p> Qty bought : <span id="qty"> </span> </p>
+	<p> Amount to pay for the item: <span id="bill"> </span> </p>
+	<p> Current Total Bill <span id="tbill"> </span> </p>
+	<button onclick="buyItem()"> Buy an Item </button>
+	<button onclick="clearFields()"> Clear </button>
+    
+    <script>
+    	/* Define the necessary variables */
+        var currentItem = "";
+        var currentPrice = 0;
+        var currentQty = 0;
+        var totalBill = 0;
+        
+        /* Function for buying an item */
+        function buyItem() {
+            /* Prompt the user for item number and quantity */
+            var itemNum = prompt("Enter item number:");
+            var qty = prompt("Enter quantity:");
+            
+            /* Check if the quantity is a valid integer */
+            if (Number.isInteger(parseInt(qty))) {
+                currentQty = parseInt(qty);
+                /* Determine the item selected and its price */
+                switch(itemNum) {
+                    case "1":
+                        currentItem = "Item#1";
+                        currentPrice = 100.00;
+                        break;
+                    case "2":
+                        currentItem = "Item#2";
+                        currentPrice = 250.00;
+                        break;
+                    case "3":
+                        currentItem = "Item#3";
+                        currentPrice = 300.00;
+                        break;
+                    default:
+                        alert("Invalid item number.");
+                        return;
+                }
+                
+                /* Compute the amount to pay for the item */
+                var amountToPay = currentQty * currentPrice;
+                
+                /* Update the display */
+                document.getElementById("item").innerHTML = currentItem;
+                document.getElementById("qty").innerHTML = currentQty;
+                document.getElementById("bill").innerHTML = amountToPay.toFixed(2);
+                
+                /* Update the total bill */
+                totalBill += amountToPay;
+                document.getElementById("tbill").innerHTML = totalBill.toFixed(2);
+            } else {
+                alert("Invalid quantity.");
+            }
+        }
+        
+        /* Function for clearing the fields */
+        function clearFields() {
+            currentItem = "";
+            currentPrice = 0;
+            currentQty = 0;
+            totalBill = 0;
+            document.getElementById("item").innerHTML = "";
+            document.getElementById("qty").innerHTML = "";
+            document.getElementById("bill").innerHTML = "";
+            document.getElementById("tbill").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One Time Password</title>
+		<!-- provide the necessary meta tags -->
+			<meta name="description" content="One Time Password"/>
+			<meta name="subject" content="Computer Science">
+			<meta name="copyright"content="KMJayoma_Lithium">
+			<meta name="language" content="EN">
+			<meta name="author" content="Kerven Marc Jayoma, marc.jayoma@gmail.com">
+			<meta name="copyright" content="">
+		<style>
+			body {
+				background: lightblue;
+				text-align: center;
+				font-family: arial;
+				color: navy;
+			}
+
+			button {
+				padding: 10px;
+				background: violet
+			}
+
+			a {
+				font-size: 0.5em;
+				color: maroon
+			}
+		</style>
+	</head>
+
+	<body onload="generateOTP()">
+		<h1>Final Verification Step</h1>
+		<h2>Current OTP: <span id="otp">_ _ _ _ _ _</span> <a href="#" onclick="generateOTP()">New OTP</a></h2>
+		<button onclick="checkOTP()">Enter the OTP as shown above</button>
+    
+		<script>
+			/* This function generates a random 6-digit OTP */
+			function generateOTP() {
+				let digits = '0123456789';
+				let OTP = '';
+				for (let i = 0; i < 6; i++) {
+					OTP += digits[Math.floor(Math.random() * 10)];
+				}
+				document.getElementById('otp').innerHTML = OTP;
+			}
+
+			/* This function checks if the entered OTP is correct */
+			function checkOTP() {
+				let enteredOTP = prompt('Enter the OTP:');
+				let currentOTP = document.getElementById('otp').innerHTML;
+				if (enteredOTP === currentOTP) {
+					window.open('https://www.google.com'); 
+				} else {
+					alert('Incorrect OTP. Please try again.');
+					generateOTP();
+				}
+			}
+		</script>
+	</body>
+</html>

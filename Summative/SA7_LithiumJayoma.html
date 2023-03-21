@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Numerology</title>
+		<!-- provide the necessary meta tags -->
+            <meta name="description" content="Numerology"/>
+			<meta name="subject" content="Computer Science">
+			<meta name="copyright"content="KMJayoma_Lithium">
+			<meta name="language" content="EN">
+			<meta name="author" content="Kerven Marc Jayoma, marc.jayoma@gmail.com">
+        <style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            span {font-size: 0.5em; color: maroon}
+        </style>
+
+	</head>
+<body>
+	<h1> Your Fortune is in your name </h1>
+	<h2> Your Name is: <span id="thename"> </span></h2>
+    <h2> Today's fortune: <span id="fortune"> </span></h2>
+    
+    <button onclick="getFortune()"> Click here to enter your name </button>
+     <script>
+    	/* Function to get fortune */
+        function getFortune() {
+            // Prompt user to enter name and display it in "thename" span
+            var name = prompt("Please enter your full name:");
+            document.getElementById("thename").innerHTML = name;
+            
+            // Get the length of the entered name, including spaces and special characters
+            var length = name.length;
+            
+            // Loop until a single digit is obtained
+            while (length > 9) {
+                var sum = 0;
+                // Convert length to a string and iterate over its digits to get their sum
+                for (var i = 0; i < length.toString().length; i++) {
+                    sum += parseInt(length.toString()[i]);
+                }
+                length = sum;
+            }
+            
+            // Display fortune based on numerology digit
+            switch (length) {
+                case 1:
+                    document.getElementById("fortune").innerHTML = "You will have a pleasant surprise today.";
+                    break;
+                case 2:
+                    document.getElementById("fortune").innerHTML = "You will be surrounded by love and kindness today.";
+                    break;
+                case 3:
+                    document.getElementById("fortune").innerHTML = "Your creativity will be at its peak today.";
+                    break;
+                case 4:
+                    document.getElementById("fortune").innerHTML = "Today is a good day to focus on your work.";
+                    break;
+                case 5:
+                    document.getElementById("fortune").innerHTML = "You will have an exciting adventure today.";
+                    break;
+                case 6:
+                    document.getElementById("fortune").innerHTML = "Your family and friends will bring you joy today.";
+                    break;
+                case 7:
+                    document.getElementById("fortune").innerHTML = "You will have a moment of clarity today.";
+                    break;
+                case 8:
+                    document.getElementById("fortune").innerHTML = "Today is a good day to make a financial investment.";
+                    break;
+                case 9:
+                    document.getElementById("fortune").innerHTML = "You will meet someone who will change your life today.";
+                    break;
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
