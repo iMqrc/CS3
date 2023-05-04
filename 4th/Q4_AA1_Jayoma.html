@@ -101,6 +101,9 @@
           }
 
           aminoAcidArray.push(aminoAcid);
+              if(aminoAcid === "STOP"){
+                break;
+              }
         }
             document.write('[' + codonArray.map(codon => `"${codon}"`).join(', ') + ']<br>');
             document.write('<br>' + aminoAcidArray.map((acid, index) => `${codonArray[index]} --> ${acid}`).join('<br>') + '</p>');
