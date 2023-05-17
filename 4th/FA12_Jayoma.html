@@ -24,7 +24,7 @@
     <button onclick="generateTable()">Generate Table</button>
     <br />
     <br />
-    <div id="table" style="border: 1px solid black; padding: 1px; padding-right: 5px; padding-bottom: 3px; display: inline-block;"></div>
+    <div id="table" style="display:none;"></div>
 
     <script>
       function generateTable() {
@@ -38,10 +38,16 @@
             }
             content += "<br>";
           }
-          document.getElementById("table").innerHTML = content;
+          const table = document.getElementById("table");
+          table.innerHTML = content;
+          table.style.border = "1px solid black";
+          table.style.padding = "1px";
+          table.style.display = "inline-block";
+          // border: 1px solid black; padding: 1px; display: inline-block;
         } else {
           alert("Please enter values between 2 and 10");
         }
+        
       }
     </script>
   </body>
