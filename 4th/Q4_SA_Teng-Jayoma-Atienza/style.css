@@ -1,0 +1,281 @@
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+			background-color: #ffffff;
+        }
+        h1 {
+            z-index: 2;
+            font-family: 'Common Pixel', sans-serif;
+            background-image: url('image/head.png');
+            background-position-y: -80px;
+            padding: 25px;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: -20px;
+            color: white;
+            font-size: 48px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            text-shadow: 2px 2px #474747;
+            box-shadow: 2px 5px #4b4b4b83;
+        }
+        h2 {
+            color: white;
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #888888;
+        }
+        legend {
+            color: #ffffff;
+            font-family: 'Common Pixel', sans-serif;
+            background-color: #335697a1;
+            border-radius: 10px;
+            font-weight: bolder;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            box-shadow: 2px 5px #00000083;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px #353535;
+            background-repeat: no-repeat;
+            background-position: -120px -120px, 0 0;
+            
+            background-image: -webkit-linear-gradient(
+                top left,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );
+            background-image: -moz-linear-gradient(
+                0 0,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );    
+            background-image: -o-linear-gradient(
+                0 0,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );
+            background-image: linear-gradient(
+                0 0,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );
+            
+            -moz-background-size: 250% 250%, 100% 100%;
+                background-size: 250% 250%, 100% 100%;
+            
+            -webkit-transition: background-position 0s ease;
+                -moz-transition: background-position 0s ease;       
+                -o-transition: background-position 0s ease;
+                    transition: background-position 0s ease;
+
+        }
+        legend:hover {
+            color: #ffffff;
+            cursor: pointer;
+            background-color: #335697a1;
+            border-radius: 10px;
+            font-weight: bolder;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            box-shadow: 2px 5px #0000006b;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px #353535;
+            background-position: 0 0, 0 0;
+  
+            -webkit-transition-duration: 0.7s;
+                -moz-transition-duration: 0.7s;
+                    transition-duration: 0.7s;
+        }
+        fieldset {
+            display: block;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            background-color: rgba(80, 51, 189, 0.568);
+            padding: 50px;
+            border: none;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        input[type="radio"] {
+            transform: scale(1.5);
+            margin-right: 10px;
+            background-color: D4FAFC;
+        }
+        #feedback {
+            font-size: 14px;
+            margin-top: 5px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+        #quiz-container {
+            margin-top: 150px;
+        }
+        input:hover {
+            cursor: pointer;
+        }
+        .question {
+            margin: auto;
+            display: block;
+            margin-bottom: 30px;
+            background-color: #ebeef7;
+            border-radius: 10px;
+            box-shadow: 2px 5px 10px #00000083;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 0px;
+            width: 90%;
+        }
+
+        .testtype {
+            color: #ffffff;
+            font-family: 'Common Pixel', sans-serif;
+            background-color: #335697a1;
+            border-radius: 10px;
+            font-weight: bolder;
+            padding: 5px;
+            padding-left: 25px;
+            padding-right: 10px;
+            box-shadow: 2px 5px #00000083;
+            font-size: 24px;
+            text-shadow: 2px 2px #353535;
+            background-repeat: no-repeat;
+            background-position: -120px -120px, 0 0;
+            
+            background-image: -webkit-linear-gradient(
+                top left,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );
+            background-image: -moz-linear-gradient(
+                0 0,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );    
+            background-image: -o-linear-gradient(
+                0 0,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );
+            background-image: linear-gradient(
+                0 0,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.2) 37%,
+                rgba(255, 255, 255, 0.8) 45%,
+                rgba(255, 255, 255, 0.0) 50%
+            );
+            
+            -moz-background-size: 250% 250%, 100% 100%;
+                background-size: 250% 250%, 100% 100%;
+            
+            -webkit-transition: background-position 0s ease;
+                -moz-transition: background-position 0s ease;       
+                -o-transition: background-position 0s ease;
+                    transition: background-position 0s ease;
+
+        }
+        .testtype:hover {
+            color: #ffffff;
+            cursor: pointer;
+            background-color: #335697a1;
+            border-radius: 10px;
+            font-weight: bolder;
+            padding: 5px;
+            padding-left: 25px;
+            padding-right: 10px;
+            box-shadow: 2px 5px #0000005e;
+            font-size: 24px;
+            text-shadow: 2px 2px #353535;
+            background-position: 0 0, 0 0;
+  
+            -webkit-transition-duration: 0.7s;
+                -moz-transition-duration: 0.7s;
+                    transition-duration: 0.7s;
+        }
+        button {
+            padding: 10px 20px;
+            font-family: 'Common Pixel', sans-serif;
+            color: white;
+            border-radius: 10px;
+            font-size: larger;
+        }
+        button[type='submit']{
+            background-color: #2C266C;
+        }
+        button[type='reset']{
+            background-color: #775CA9;     
+        }
+        li {
+            padding: 10px;
+        }
+
+        ul {
+            padding-left: -40px;    
+        }
+        #questionstyle {
+            color: rgb(247, 247, 247);
+            background-color: #6198ffa1;
+            border-radius: 10px;
+            padding: 5px;
+            padding-left: 25px;
+            padding-right: -10px;
+            font-weight: bold;
+            font-size: larger;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            margin-right: 20px;
+            box-shadow: 2px 5px #0000005e;
+            text-shadow: 1.5px 1.5px #353535;
+        }
+        #questionstyle:hover {
+            color: rgb(247, 247, 247);
+            background-color: #4a89fda1;
+            border-radius: 10px;
+            padding: 5px;
+            padding-left: 25px;
+            padding-right: -10px;
+            font-weight: bold;
+            font-size: larger;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            margin-right: 20px;
+            box-shadow: 1px 3px #0000007e;
+        }
+        input[type="text"]{
+            border-radius: 3px;
+            border: none;
+            scale: 110%;
+            margin-left: 12px;
+        }
+        input[type="radio"]{
+            scale: 105%;
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+        input[name="Q19"]{
+            margin-right: 6px;
+        }
